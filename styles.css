@@ -131,7 +131,8 @@ a:focus-visible {
 
 .profile-copy h1 {
   margin: 0;
-  font-size: clamp(1.98rem, 2.8vw, 2.5rem);
+  font-size: clamp(1.9rem, 2.65vw, 2.38rem);
+  font-weight: 600;
   line-height: 1;
   letter-spacing: -0.03em;
 }
@@ -668,7 +669,7 @@ a:focus-visible {
   }
 
   .profile-copy h1 {
-    font-size: clamp(1.82rem, 8.6vw, 2.2rem);
+    font-size: clamp(1.76rem, 8vw, 2.08rem);
   }
 
   .profile-title,
@@ -793,7 +794,7 @@ a:focus-visible {
   }
 
   .profile-copy h1 {
-    font-size: 1.72rem;
+    font-size: 1.64rem;
   }
 
   .bio-block p {
