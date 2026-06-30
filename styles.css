@@ -576,11 +576,19 @@ a:focus-visible {
   .hero-profile {
     width: auto;
     flex: initial;
+    display: flex;
+    align-items: flex-start;
+    gap: 24px;
   }
 
   .portrait-frame {
     width: 184px;
     height: 184px;
+  }
+
+  .profile-copy {
+    flex: 1 1 auto;
+    min-width: 0;
   }
 
   .research-item {
@@ -605,21 +613,93 @@ a:focus-visible {
   }
 
   .topbar {
-    padding: 14px 0;
-    align-items: flex-start;
-    flex-direction: column;
+    min-height: auto;
+    padding: 12px 0;
+    justify-content: center;
   }
 
   .top-nav {
-    gap: 14px 18px;
+    width: 100%;
+    justify-content: center;
+    gap: 10px 18px;
   }
 
   .page {
-    padding-top: 24px;
+    padding-top: 20px;
+  }
+
+  .hero {
+    gap: 20px;
+  }
+
+  .hero-profile {
+    display: block;
+    text-align: center;
+    padding-top: 0;
+  }
+
+  .portrait-frame {
+    width: 148px;
+    height: 148px;
+    margin: 0 auto 16px;
+  }
+
+  .profile-copy h1 {
+    font-size: clamp(2rem, 10vw, 2.5rem);
+  }
+
+  .profile-title,
+  .profile-school {
+    font-size: 0.98rem;
+  }
+
+  .icon-links {
+    justify-content: center;
+    margin: 14px 0 8px;
+  }
+
+  .hero-main {
+    padding-top: 0;
   }
 
   .bio-block p {
     font-size: 1rem;
+    margin-bottom: 14px;
+    line-height: 1.68;
+  }
+
+  .section-block {
+    margin-top: 18px;
+  }
+
+  .section-heading {
+    margin-bottom: 14px;
+  }
+
+  .section-heading h2 {
+    font-size: 1rem;
+  }
+
+  .news-list-panel,
+  .experience-panel {
+    border-radius: 18px;
+  }
+
+  .news-list-panel {
+    max-height: 232px;
+  }
+
+  .news-row {
+    padding: 12px 16px 12px 18px;
+  }
+
+  .news-row::before {
+    top: 12px;
+    bottom: 12px;
+  }
+
+  .news-meta {
+    margin-bottom: 2px;
   }
 
   .research-body h3 {
@@ -628,11 +708,78 @@ a:focus-visible {
 
   .research-item {
     grid-template-columns: 1fr;
-    gap: 14px;
+    gap: 12px;
+    padding: 20px 0;
   }
 
   .research-thumb {
     width: 100%;
-    max-width: 220px;
+    max-width: none;
+    padding-top: 0;
+  }
+
+  .research-image {
+    aspect-ratio: 1.55 / 1;
+  }
+
+  .research-links {
+    gap: 8px;
+  }
+
+  .research-links a {
+    font-size: 0.84rem;
+  }
+
+  .experience-panel {
+    padding: 16px;
+    max-height: 280px;
+  }
+
+  .experience-line {
+    font-size: 0.96rem;
+  }
+
+  .contact-block {
+    padding-bottom: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 1rem;
+  }
+
+  .top-nav {
+    gap: 8px 14px;
+  }
+
+  .top-nav a {
+    font-size: 0.94rem;
+  }
+
+  .portrait-frame {
+    width: 132px;
+    height: 132px;
+  }
+
+  .profile-copy h1 {
+    font-size: 1.9rem;
+  }
+
+  .bio-block p {
+    font-size: 0.98rem;
+  }
+
+  .news-list-panel,
+  .experience-panel {
+    border-radius: 16px;
+  }
+
+  .news-row {
+    gap: 4px;
+  }
+
+  .research-body h3 {
+    font-size: 1.14rem;
   }
 }
