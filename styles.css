@@ -400,8 +400,9 @@ a:focus-visible {
 
 .news-row {
   display: grid;
-  grid-template-columns: 126px minmax(0, 1fr);
-  gap: 18px;
+  grid-template-columns: 128px minmax(0, 1fr);
+  gap: 22px;
+  align-items: start;
   padding: 14px 22px;
   position: relative;
 }
@@ -440,6 +441,7 @@ a:focus-visible {
   min-width: 0;
   font-size: 0.9rem;
   line-height: 1.35;
+  white-space: nowrap;
 }
 
 .research-tag {
@@ -634,8 +636,8 @@ a:focus-visible {
   }
 
   .news-row {
-    grid-template-columns: 1fr;
-    gap: 6px;
+    grid-template-columns: 104px minmax(0, 1fr);
+    gap: 14px;
   }
 
   .experience-grid {
@@ -820,6 +822,7 @@ a:focus-visible {
   }
 
   .news-row {
+    grid-template-columns: 1fr;
     gap: 4px;
   }
 
